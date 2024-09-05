@@ -17,7 +17,7 @@ for (const [verb, role] of Object.entries(roles)) {
   lambdas.push({
     Region: "us-east-1",
     FunctionName: `${verb}-ec2-instances`,
-    Role: `arn:aws:iam::881712214633:role/service-role/${role}`,
+    Role: `arn:aws:iam::1234567890:role/service-role/${role}`,
     Runtime: "nodejs18.x",
     Handler: "index.handler",
     Tags: {
